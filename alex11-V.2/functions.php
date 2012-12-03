@@ -47,3 +47,15 @@ if ( function_exists('register_sidebar') ){
 		'after_title' => '</h3>',
 	) );
 }
+// Added to extend allowed files types in Media upload
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+
+// Add *.EPS files to Media upload
+$existing_mimes['eps'] = 'application/postscript';
+
+// Add *.AI files to Media upload
+$existing_mimes['ai'] = 'application/postscript';
+
+return $existing_mimes;
+}
