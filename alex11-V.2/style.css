@@ -913,6 +913,19 @@ a img {
 body.search .pagetitle {
 	display:none;
 }
+.linkpage-widget li {
+	list-style-type:disc;
+	font-size:14px;
+	margin:5px 0;
+}
+#widget-linkpage-left {
+	width:48%;
+	float:left;
+}
+#widget-linkpage-right {
+	width:48%;
+	float:right;
+}
 
 /* PLUGIN: The Events Calendar
 --------------------------------------------- */

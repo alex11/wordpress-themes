@@ -27,7 +27,6 @@ if ( function_exists('register_sidebar') ){
 		'before_title' => '<h3 class="widgettitle">',
 		'after_title' => '</h3>',
 	) );
-	// Area 7, located in the pagetemplate. Empty by default.
 	register_sidebar( array(
 		'name' => __( 'Startseite - Rechts', 'buddypress' ),
 		'id' => 'right-homepage-widget-area',
@@ -41,6 +40,33 @@ if ( function_exists('register_sidebar') ){
 		'name' => __( 'Startseite - 2. volle Breite', 'buddypress' ),
 		'id' => 'second-fullside-homepage-widget-area',
 		'description' => __( 'The second full side homepage widget area', 'buddypress' ),
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Linkseite - Links', 'buddypress' ),
+		'id' => 'left-linkpage-widget-area',
+		'description' => __( 'The left linkpage widget area', 'buddypress' ),
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Linkseite - Rechts', 'buddypress' ),
+		'id' => 'right-linkpage-widget-area',
+		'description' => __( 'The right linkpage widget area', 'buddypress' ),
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Linkseite - volle Breite', 'buddypress' ),
+		'id' => 'fullside-linkpage-widget-area',
+		'description' => __( 'Full side linkpage widget area', 'buddypress' ),
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widgettitle">',
