@@ -169,18 +169,43 @@ h1, h2, h3 {
 	font-family:'UbuntuRegular',Helvetica,Verdana,sans-serif;
 }
 .entry h1 {
+	line-height:34px;
+}
+.entry h2 {
+	line-height:28px;
+	margin-top:25px;
+}
+.entry h3 {
+	margin-top:22px;
+}
+.entry h4 {
+	font-size:20px;
 	border-top:1px solid #F99A3D;
 	border-bottom:1px solid #F99A3D;
 	padding:35px 0;
-	line-height:34px;
+	line-height:38px;
 	margin:35px 0;
 }
-.entry h2 {
+.entry h5 {
 	font-size:16px;
 	border-left:6px solid #F99A3D;
 	padding-left:40px;
 	line-height:26px;
 	margin:35px 0;
+}
+.entry h6 {
+	font-size:16px;
+	background:#F99A3D;
+	color:#fff;
+	padding:10px;
+	margin:10px 0;
+}
+.entry h6 a:link, .entry h6 a:visited {
+	color:#fff;
+}
+.entry h6 a:hover, .entry h6 a:focus, .entry h6 a:active {
+	color:#fff;
+	text-decoration:underline;
 }
 h2.pagetitle a:link, h2.pagetitle a:visited, h2.posttitle a:link, h2.posttitle a:visited {
     color: #523914;
