@@ -1191,3 +1191,64 @@ h2.pagetitle .category { font-weight:normal; font-size:11px; }
     margin-left: 2px;
     padding-left: 25px !important;
 }
+/* PLUGIN: Contact-Form 7
+--------------------------------------------- */
+#form-amount {
+	border-bottom:1px solid #F99A3D;
+	padding-bottom:20px;
+}
+#form-amount p.amount {
+	font-size:18px;
+	text-align:center;
+	width:96%;
+	margin-bottom:30px;
+}
+#form-amount span.amount input {
+	font-size:18px;
+	width:25%;
+	text-align:right;
+	margin-left:15px;
+	padding:5px;
+}
+#form-amount p.email {
+	width:48%;
+	float:left;
+}
+#form-amount p.name {
+	width:48%;
+	float:right;
+}
+#form-amount p.email input, #wpcf7-f9600-p1642-o1 p.name input {
+	width:88%;
+	font-size:14px;
+	padding:5px;
+}
+#form-amount p.message textarea {
+	width:95%;
+	height:80px;
+	padding:5px;
+}
+#form-amount p.captcha {
+	width:48%;
+	float:left;
+	margin-top:3px;
+}
+#form-amount p.submit {
+	width:48%;
+	float:right;
+	text-align:right;
+}
+#form-amount p.captcha img {
+	margin-top:3px;
+	display:block;
+	float:left;
+}
+#form-amount p.captcha input {
+	width:45%;
+	font-size:14px;
+	padding:5px;
+	float:left;
+}
+#form-amount p.submit input[type="submit"] {
+	font-size:20px;
+}
