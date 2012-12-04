@@ -23,7 +23,7 @@
 					<ul>
 						<li>Keine Diskriminierung</li>
 						<li>Deine Inhalte publizierst du als Privatperson und nicht im Namen einer Organisation, Unternehmen, Partei o.&auml;.</li>
-						<li>Alle Inhalte werden automatisch mit der <a href="http://creativecommons.org/licenses/by-sa/3.0/de/" target="_blank">Creative Commons Lizenz</a> lizensiert, es sei denn du w&auml;hlst eine andere Lizenzart f&uuml;r deine Inhalte.</li>
+						<li>Alle Inhalte werden automatisch mit der <a href="http://creativecommons.org/licenses/by-sa/3.0/de/" target="_blank">Creative Commons Lizenz</a> lizensiert. (<a href="/creative-commons">Weitere Informationen</a>)</li>
 						<li>Es wird nicht zensiert. Die Moderation beh&auml;lt sich lediglich Struktur-, Kategorie- und Tag&auml;nderungen vor.</li>
 						<li>Es ist der Datenschutz zu beachten. Ohne Zustimmung der jeweiligen Person d&uuml;rfen keine Personen- oder Kontaktdaten ver&ouml;ffentlicht oder verbreitet werden.</li>
 					</ul>
