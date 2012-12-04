@@ -1218,7 +1218,7 @@ h2.pagetitle .category { font-weight:normal; font-size:11px; }
 	width:48%;
 	float:right;
 }
-#form-amount p.email input, #wpcf7-f9600-p1642-o1 p.name input {
+#form-amount p.email input, #form-amount p.name input {
 	width:88%;
 	font-size:14px;
 	padding:5px;
@@ -1251,4 +1251,5 @@ h2.pagetitle .category { font-weight:normal; font-size:11px; }
 }
 #form-amount p.submit input[type="submit"] {
 	font-size:20px;
+	padding:10px 10px;
 }
