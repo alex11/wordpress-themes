@@ -27,6 +27,7 @@ Hello, this is the BuddyPress Responsive theme stylesheet
 	body {
 		margin-top: -28px !important;
 		background: #fff;
+		min-width:480px;
 	}
 	#wpadminbar {
 		display: none;
