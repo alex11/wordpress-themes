@@ -479,6 +479,14 @@ div#sidebar div#sidebar-me img.avatar {
 	width:25%;
 	float:right;
 }
+#footer #footer-widgets #third ul.xoxo {
+	width:100%;
+	clear:both;
+	text-align:center;
+}
+#footer #footer-widgets #third ul.xoxo li {
+    margin: 10px 0;
+}
 #footer #footer-widgets img.avatar {
 	border:0;
 }
