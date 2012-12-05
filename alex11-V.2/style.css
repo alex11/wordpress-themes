@@ -594,7 +594,7 @@ div#item-header div.generic-button a:hover, div#item-header div.generic-button a
     border: 1px solid #3a899a;
 	color:#fff;
 }
-.activity-meta a.button.fav:link, .activity-meta a.button.fav:visited, .activity-meta a.button.confirm:link, .activity-meta a.button.confirm:visited {
+.activity-meta a.button.fav:link, .activity-meta a.button.fav:visited, .activity-meta a.button.confirm:link, .activity-meta a.button.confirm:visited, .comment-options a.button.comment-edit-link:link, .comment-options a.button.comment-edit-link:visited {
 	background:transparent;
     border: 0;
 	box-shadow: none;
@@ -608,7 +608,7 @@ div#item-header div.generic-button a:hover, div#item-header div.generic-button a
     text-decoration: none;
 	display:inline;
 }
-.activity-meta a.button.fav:hover, .activity-meta a.button.fav:focus, .activity-meta a.button.fav:active, .activity-meta a.button.confirm:hover, .activity-meta a.button.confirm:focus, .activity-meta a.button.confirm:active {
+.activity-meta a.button.fav:hover, .activity-meta a.button.fav:focus, .activity-meta a.button.fav:active, .activity-meta a.button.confirm:hover, .activity-meta a.button.confirm:focus, .activity-meta a.button.confirm:active, .comment-options a.button.comment-edit-link:hover, .comment-options a.button.comment-edit-link:focus, .comment-options a.button.comment-edit-link:active {
 	color: #cd552d;
 }
 /* Forms
