@@ -1,4 +1,52 @@
 <?php
+if ( !function_exists( 'bp_dtheme_enqueue_styles' ) ) :
+/**
+ * Enqueue theme CSS safely
+ *
+ * For maximum flexibility, BuddyPress Default's stylesheet is enqueued, using wp_enqueue_style().
+ * If you're building a child theme of bp-default, your stylesheet will also be enqueued,
+ * automatically, as dependent on bp-default's CSS. For this reason, bp-default child themes are
+ * not recommended to include bp-default's stylesheet using <a href="http://buddypress.org/community/members/import/" rel="nofollow">@import</a>.
+ *
+ * If you would prefer to use <a href="http://buddypress.org/community/members/import/" rel="nofollow">@import</a>, or would like to change the way in which stylesheets are
+ * enqueued, you can override bp_dtheme_enqueue_styles() in your theme's functions.php file.
+ *
+ * <a href="http://buddypress.org/community/members/see/" rel="nofollow">@see</a> http://codex.wordpress.org/Function_Reference/wp_enqueue_style
+ * <a href="http://buddypress.org/community/members/see/" rel="nofollow">@see</a> http://codex.buddypress.org/releases/1-5-developer-and-designer-information/
+ * <a href="http://buddypress.org/community/members/since/" rel="nofollow">@since</a> 1.5
+ */
+function bp_dtheme_enqueue_styles() {
+ 
+    // Bump this when changes are made to bust cache
+    $version = '20111013';
+ 
+    // Register our main stylesheet
+    wp_register_style( 'bp-default-main', get_template_directory_uri() . '/_inc/css/default.css', array(), $version );
+ 
+    // If the current theme is a child of bp-default, enqueue its stylesheet
+    if ( is_child_theme() && 'bp-default' == get_template() ) {
+        wp_enqueue_style( get_stylesheet(), get_stylesheet_uri(), array( 'bp-default-main' ), $version );
+    }
+ 
+    // Enqueue the main stylesheet
+    wp_enqueue_style( 'bp-default-main' );
+ 
+    // Default CSS RTL
+    if ( is_rtl() )
+        wp_enqueue_style( 'bp-default-main-rtl',  get_template_directory_uri() . '/_inc/css/default-rtl.css', array( 'bp-default-main' ), $version );
+ 
+    // Responsive layout
+    if ( current_theme_supports( 'bp-default-responsive' ) ) {
+        wp_enqueue_style( 'bp-default-responsive', get_stylesheet_directory_uri() . '/responsive.css', array( 'bp-default-main' ), $version );
+ 
+        if ( is_rtl() )
+            wp_enqueue_style( 'bp-default-responsive-rtl', get_template_directory_uri() . '/_inc/css/responsive-rtl.css', array( 'bp-default-responsive' ), $version );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'bp_dtheme_enqueue_styles' );
+endif;
+
+
 if ( function_exists('register_sidebar') ){
 	register_sidebar( array(
 		'name' => __( ' Startseite - Nicht angemeldete Benutzer', 'buddypress' ),

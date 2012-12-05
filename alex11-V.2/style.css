@@ -53,6 +53,7 @@ div#container {
 	background:#464646;
     margin: 0;
 	color:#fff;
+	min-width:1000px;
 }
 a:link, a:visited {
     color: #41a3b8;
@@ -80,13 +81,14 @@ h1#logo a:link, h1#logo a:visited {
 	background:url(images/logo.png) 0 0 no-repeat;
 	z-index:1000;
 }
-#search-bar {
+#header #search-bar, #header #loginout, #header #sidebar-me {
 	display:none;
 }
 #header-banner {
 	background:url(images/header-banner.jpg) 0 0 repeat-x;
 	width:100%;
 	height:232px;
+	min-width:1000px;
 }
 
 /* Navigation
@@ -431,7 +433,12 @@ body.home-page #sidebar #login-button, body.registration #sidebar #login-button,
 body.registration #sidebar p#login-text, body.activation #sidebar p#login-text {
 	display:none;
 }
-div#sidebar div#sidebar-me img.avatar {
+div#sidebar-me h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 8px;
+}
+div#sidebar-me img.avatar {
 	width:45px;
 	height:45px;
 	margin-right:15px;
@@ -1261,3 +1268,11 @@ h2.pagetitle .category { font-weight:normal; font-size:11px; }
 	font-size:20px;
 	padding:10px 10px;
 }
+/* PLUGIN: customized-recent-comments
+--------------------------------------------- */
+#footer ul.customized-recent-comments li.recentcomment {
+	width:48%;
+	margin-right:10px;
+	float:left;
+}
+@import url("responsive.css");

@@ -18,6 +18,26 @@
 
 		<div id="header">
 			<h1 id="logo" role="banner"><a href="<?php echo home_url(); ?>" title="<?php _ex( 'Home', 'Home page banner link title', 'buddypress' ); ?>">&nbsp;</a></h1>
+			
+			<?php if (is_user_logged_in() ) { //only logged in user can see this ?>
+				<div id="sidebar-me">
+					<a href="<?php echo bp_loggedin_user_domain(); ?>">
+						<?php bp_loggedin_user_avatar( 'type=thumb&width=40&height=40' ); ?>
+					</a>
+
+					<h4><?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h4>
+					<a class="button logout" href="<?php echo wp_logout_url( wp_guess_url() ); ?>"><?php _e( 'Log Out', 'buddypress' ); ?></a>
+
+					<?php do_action( 'bp_sidebar_me' ); ?>
+				</div>
+			<?php } else { ?>
+				<div id="loginout"><a href="/sei-dabei">Registrieren</a> | <a href="<?php echo wp_login_url( get_permalink() ); ?>">Anmelden</a></div>
+			<?php } ?>
+
+			<div id="navigation" role="navigation">
+				<?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'primary', 'fallback_cb' => 'bp_dtheme_main_nav' ) ); ?>
+			</div>
+			
 			<div id="search-bar" role="search">
 				<div class="padder">
 					
@@ -38,10 +58,6 @@
 
 				</div><!-- .padder -->
 			</div><!-- #search-bar -->
-
-			<div id="navigation" role="navigation">
-				<?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'primary', 'fallback_cb' => 'bp_dtheme_main_nav' ) ); ?>
-			</div>
 
 			<?php do_action( 'bp_header' ); ?>
 
