@@ -369,17 +369,6 @@ Hello, this is the BuddyPress Responsive theme stylesheet
 	body {
 		width:480px;
 	}
-	ul#nav li {
-		float: none;
-		width: 100%;
-		margin-bottom: 0.6em;
-		margin-right: 0;
-		margin-left: 0;
-	}
-	ul#nav li:nth-child(even) {
-		margin-left: 0;
-		margin-right: 0;
-	}
 	ul#nav li a {
 		-moz-border-radius: 0.25em;
 		-webkit-border-radius: 0.25em;
