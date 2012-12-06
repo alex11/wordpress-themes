@@ -286,8 +286,8 @@ body.activity.directory #content .padder form#whats-new-form h5 {
 }
 /* Content
 --------------------------------------------- */
-.entry p {
-	font-size:11pt;
+.entry p, .entry li {
+	font-size:10pt;
 	line-height:150%;
 	color:#373737;
 	letter-spacing:0.01em;
