@@ -6,6 +6,9 @@
 		<?php if ( current_theme_supports( 'bp-default-responsive' ) ) : ?><meta name="viewport" content="width=device-width, initial-scale=1.0" /><?php endif; ?>
 		<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<link rel="icon" href="/wp-content/themes/alex11-V.2/favicon.ico" type="image/x-icon">
+		<link rel="image_src" href="/wp-content/themes/alex11-V.2/images/facebook_share-blue.png" />
+		<link rel="image_src" href="/wp-content/themes/alex11-V.2/images/facebook_share-red.png" />
 
 		<?php do_action( 'bp_head' ); ?>
 		<?php wp_head(); ?>
