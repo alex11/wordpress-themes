@@ -46,6 +46,20 @@ function bp_dtheme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'bp_dtheme_enqueue_styles' );
 endif;
 
+// Change LogIn Logo
+
+add_action("login_head", "my_login_head");
+function my_login_head() {
+	echo "
+	<style>
+	body.login #login h1 a {
+		background: url('/wp-content/themes/alex11-V.2/images/logo-login.png') no-repeat scroll center top transparent;
+		height: 63px;
+	}
+	</style>
+	";
+}
+
 
 if ( function_exists('register_sidebar') ){
 	register_sidebar( array(
